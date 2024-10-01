@@ -21,10 +21,10 @@ buttons.forEach(button => {
       else if (e.target.class = "service") {
          location.reload();
       }
-      else {
+      // else {
       
-         location.reload();
-      }
+      //    location.reload();
+      // }
 
    })
 })
