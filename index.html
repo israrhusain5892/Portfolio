@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+
+.loading {
+            display: none; /* Hide loader by default */
+            border: 2px solid white;
+            border-radius: 50%;
+            border-top-color: transparent;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-button {
+            position: relative;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .loading-button:disabled {
+            cursor: not-allowed;
+        }
+        .visit-site::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            /* Adjust distance from button */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid blueviolet;
+        }
+
+        #visit4::after {
+            border-top: 10px solid green;
+        }
+
+        #visit2::after {
+            border-top: 10px solid #DB2777;
+        }
+
+        #visit3::after {
+            border-top: 10px solid burlywood;
+        }
+
+
+        .github-btn button {
+
+            font-size: 16px;
+        }
+
+        .social a {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            font-size: 20px;
+            border: 2px solid cyan;
+            color: cyan;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+
+        }
+
+        .social a:hover {
+            /* box-shadow: 0px 0px 16px cyan; */
+            background: cyan;
+            color: #000;
+        }
+    </style>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <h1 class="logo">Portfolio.</h1>
+
+            <ul class="nav-links">
+                <li style="--i:1"><a class="active" value="home" href="index.html">Home</a></li>
+                <li style="--i:2"><a class="contact" value="contact" href="#contact-me">Contact</a></li>
+                <li style="--i:3"><a class="about" value="about" href="#about-me">About</a></li>
+                <li style="--i:4"><a class="skill" value="skill" href="#skill">Skills</a></li>
+                <li style="--i:5"><a class="myproject" value="project" href="#latest-works">Projects</a></li>
+                <li style="--i:6"><a class="service" value="service" href="#services">Services</a></li>
+                <button class="download-btn">Download CV</button>
+            </ul>
+            <button>Download CV</button>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-container">
+                <div class="text">
+                    <h3 style="padding: 0px; margin: -10px; margin-left: 3px; line-height: 0%;">Hello, it's Me<h3>
+
+                            <h1 style=" font-size: 38px; font-weight: 600; padding: 0px; margin: 0px;">Israr Husain</h1>
+
+                            <h3 style="padding: 0px; margin:2px;"> And I'm a <span class="dev-text"
+                                    style="color: cyan;"></span> </h3>
+                            <p>I'm a Software Engineer who completed my Engineering degree from Rajshree Institute of
+                                Management
+                                And Technology, Bareilly, Uttar Pradesh. I chose to study computer science because I am
+                                fascinated by how computers work and spend most of my spare time designing programs and
+                                web
+                                pages. I enjoy problem solving and logical thinking...</p>
+
+                            <div class="social"
+                                style="display: flex; justify-content: flex-start;align-items: center; gap:10px;">
+
+                                <a style="--i:7" href="#"> <i class="bx bxl-facebook text-cyan"></i></a>
+                                <a style="--i:8" href="#"><i class="bx bxl-linkedin text-cyan"></i></a>
+                                <a style="--i:9" href="#"><i class="bx bxl-github text-cyan"></i></a>
+                                <a style="--i:10" href="#"><i class="bx bxl-twitter text-cyan"></i></a>
+                            </div>
+                            <div class="text-btn">
+                                <a href="#about-me"><button >More About Me</button></a>
+                            </div>
+                </div>
+                <div class="photo">
+                    <div class="photo-outlier">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="about-me" class="about" style=" position: relative;">
+            <h1 style="color: white; text-align: center; font-size: 34px;">About <span style="color:cyan">Me</span></h1>
+            <div class="about-container">
+                <div class="about-photo-container">
+                    <div class="about-photo">
+                        <!-- <img src="./Images/photo.jpg"/> -->
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h1>Full Stack <span style="color: cyan;">Developer!</span></h1>
+                    <p>
+                        I'm a Motivated and skilled full stack developer with 6 months of
+                        experience in top product-based companies. Dedicated to delivering
+                        high- quality projects with user delight and optimizing performance.
+                        Seeking a challenging role in a dynamic organization where I can
+                        utilize my expertise in web development, JavaScript, and frontend
+                        technologies to create innovative and scalable solutions.
+                        I have learnt web development from Accio job bootcamp where I learnt about the DSA Java Backend
+                        Spring boot and learned front-end technologies like HTML, CSS, JavaScript, and React Js.
+
+                        I have also done some internships at Hulkhire where I worked on a live project involving payment
+                        integration in Spring Boot. I gained a lot of experience and know how to work with a team.</p>
+                    <div class="about-btn">
+                        <button>More About Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 style="text-align: center; font-size:34px;color:white; margin-top: 100px;">My <span
+                style="color:cyan">Services</span></h1>
+        <section id="services">
+
+            <div class="service-container">
+                <div class="service-card" style="--i:1">
+                    <i class='bx bxl-html5'></i>
+                    <i class='bx bxl-css3'></i>
+                    <i class='bx bxl-bootstrap'></i>
+                    <i class='bx bxl-javascript'></i>
+                    <i class='bx bxl-react'></i>
+                    <h1>Web Development</h1>
+                    <p>I provide service of front-end technologies in HTML, CSS, JavaScript, and React JS. I have worked
+                        on different front-end projects like creating clones of popular websites.</p>
+                    <div style="  display: flex; justify-content: center; disalign-content: center;"><button
+                            style="align-content: center;">More About</button></div>
+                </div>
+                <div class="service-card" style="--i:2">
+                    <i class='bx bxl-java'></i>
+                    <i class='bx bxl-spring-boot'></i>
+                    <i class='bx bxl-mongodb'></i>
+                    <i class='bx bxl-mysql'></i>
+                    <i class='bx bx-data'></i>
+                    <i class='bx bxl-aws'></i>
+                    <h1>Backend Development</h1>
+                    <p>I have experience with backend technologies like Spring Boot, Hibernate, MySQL, JPA, and Lombok.
+                        Projects include movie booking systems and e-commerce applications.</p>
+                    <div style="  display: flex; justify-content: center; disalign-content: center;"><button
+                            style="align-content: center;">More About</button></div>
+                </div>
+
+                <div class="service-card" id="card" style="--i:3">
+                    <i class='bx bxl-nodejs'></i>
+                    <i class='bx bxl-react'></i>
+                    <i class='bx bxl-mongodb'></i>
+                    <i class='bx bxl-javascript'></i>
+                    <h1>Mern Stack Development</h1>
+                    <p>I have experience with backend technologies like Node js, express Js, MySQL, MongoDB. Projects
+                        include online Book Store. I also work on a mern project Book store.</p>
+                    <div style="  display: flex; justify-content: center; disalign-content: center;"><button
+                            style="align-content: center;">More About</button></div>
+                </div>
+
+            </div>
+        </section>
+        <h1 style="text-align: center; margin-top: 100px; font-size: 34px; color: white;">My <span
+                style="color:cyan">Skills</span></h1>
+        <section id="skill">
+            <div class="skill-container">
+                <div class="text-skill">
+                    <img src="./Images/virtual.png">
+                    <h1>I love these technologies</h1>
+                    <p>I am a software engineer, and when it comes to my experience and creative skills, I initially
+                        struggled but found motivation to excel. With the support of my teachers, I have developed
+                        skills in DSA, Java, Spring Boot, and front-end technologies like HTML, CSS, JavaScript, and
+                        React JS.</p>
+                </div>
+                <div class="skill-sub">
+
+                    <div style="--i:1"><i class='bx bxl-html5'></i>
+                        <div>HTML</div>
+                    </div>
+                    <div style="--i:2"><i class='bx bxl-css3'></i>
+                        <div>CSS</div>
+                    </div>
+                    <div style="--i:3"><i class='bx bxl-css3'></i>
+                        <div>TAILWIND</div>
+                    </div>
+                    <div style="--i:1"><i class='bx bxl-bootstrap'></i>
+                        <div>BOOTSTRAP</div>
+                    </div>
+                    <div style="--i:2"><i class='bx bxl-javascript'></i>
+                        <div>JAVASCRIPT</div>
+                    </div>
+                    <div style="--i:3"><i class='bx bxl-react'></i>
+                        <div>REACTJS</div>
+                    </div>
+                    <div style="--i:4"><i class='bx bxl-nodejs'></i>
+                        <div>NODEJS</div>
+                    </div>
+                    <div style="--i:5"><i class='bx bxl-mongodb'></i>
+                        <div>MONGODB</div>
+                    </div>
+                    <div style="--i:6"><i class='bx bxl-java'></i>
+                        <div>CORE JAVA</div>
+                    </div>
+                    <div style="--i:7"><i class='bx bxl-j2e'></i>
+                        <div>J2EE</div>
+                    </div>
+                    <div style="--i:8"><i class='bx bxl-spring-boot'></i>
+                        <div>HIBERNATE(ORM)</div>
+                    </div>
+                    <div style="--i:9"><i class='bx bxl-spring-boot'></i>
+                        <div>SPRINGBOOT</div>
+                    </div>
+                    <div style="--i:10">
+                        <div>JPA</div>
+                    </div>
+                    <div style="--i:11"><i class='bx bx-data'></i>
+                        <div>MYSQL</div>
+                    </div>
+                    <div style="--i:12"><i class='bx bx-data'></i>
+                        <div>POSTGRESQL</div>
+                    </div>
+                    <div style="--i:13">
+                        <div>COLLECTIONS</div>
+                    </div>
+                    <div style="--i:14">
+                        <div>MAVEN</div>
+                    </div>
+                    <div style="--i:15">
+                        <div>SWAGGER</div>
+                    </div>
+                    <div style="--i:16">
+                        <div>TOMCAT</div>
+                    </div>
+                    <div style="--i:17">
+                        <div>DSA</div>
+                    </div>
+                    <div style="--i:18"><i class='bx bxl-github'></i>
+                        <div>GIT</div>
+                    </div>
+                    <div style="--i:19"><i class='bx bxl-github'></i>
+                        <div>GITHUB</div>
+                    </div>
+                    <div style="--i:20">
+                        <div>RESTFUL API</div>
+                    </div>
+                    <div style="--i:21">
+                        <div>LOMBOK</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <h1 style="text-align: center; margin-top: 100px; font-size: 34px; color: white;">Recent <span
+                style="color:cyan">Projects</span></h1>
+
+        <section id="project">
+            <h2 class="works" id="latest-works">Latest Works</h2>
+            <div class="project project0">
+                <div class="project-img">
+
+                    <div class="project-img-wrapper">
+                        <a href="https://wondersofbharat-tourism-app.vercel.app/" target="_blank">
+                            <img src="./Images/tourism-front.png" />
+                        </a>
+                        <a class="button" href="https://wondersofbharat-tourism-app.vercel.app/" target="_blank">
+                            <span class="visit-site" id="visit1" style="background: blueviolet;">Tourism
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21"></line>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>Indian Tourism Wonder Of Bharat</h3>
+                    <a href="https://github.com/israrhusain5892/Tourism-and-Travel-Management-System.git" target="_blank" class="github-btn">
+                        <button
+                            style="background: blueviolet; padding: 10px; color: white; border-radius: 5px; border:none;">Github
+                            <i class='bx bx-link-external'></i>
+                        </button>
+                    </a>
+                    <p>
+                        Wonder of Bharat is a tourism site. This tourism website can offer key functionalities to provide a seamless and enriching experience for travelers. It  include destination pages with detailed information, high-quality images, and local insights. Users can search and filter destinations or tours based on preferences like location, activity type, budget, and duration. Booking and reservation systems are integrated with hotels, and tour providers, with secure payment options. Built the complete site from scratch.
+                    </p>
+                    <div>
+                        <ul>
+                            <li>#react.js</li>
+                            <li>#vite.js</li>
+                             <li>#spring boot</li>
+                             <li>#Jpa Hibernate</li>
+                             <li>#Mysql</li>
+                            <li>#css</li>
+                            <li>#javascript</li>
+                            <li>#figma</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <a class="circle-dot" href="https://webdevenglish.com/" target="_blank"></a>
+                <div class="circle-extension"></div>
+            </div>
+            <!-- 2nd project -->
+            <div class="project project1">
+                <div class="project-details">
+                    <h3>Book Store Application</h3>
+                    <a href="" target="_blank" class="github-btn">
+                        <button
+                            style="background: #DB2777; padding: 10px; color: white; border-radius: 5px; border:none;">Github
+                            <i class='bx bx-link-external'></i>
+                        </button>
+                    </a>
+                    <p>
+                        Allow users to sign up and create accounts.
+                        Implement login and logout functionalities.
+                        Display books with details (title, author, price, rating, etc.).
+                        Categorize books by genre, language, author, or publication date.
+                        Search functionality to find books by title, author, or ISBN.
+                        Detailed view of individual books, including descriptions, reviews, and ratings.
+                        Filters and sorting options for book price, popularity, etc. Built the complete site from
+                        scratch.
+                    </p>
+                    <div>
+                        <ul>
+                            <li>#react.js</li>
+                            <li>#express.js</li>
+                            <li>#node.js</li>
+                            <li>#swiper.js</li>
+                            <li>#mongoDB</li>
+                            <li>#mongoose</li>
+                            <li>#css</li>
+                            <li>#javascript</li>
+                            <li>#figma</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="project-img">
+
+                    <div class="project-img-wrapper">
+                        <a href="https://wondersofbharat-tourism-app.vercel.app/" target="_blank">
+                            <img src="./Images/bookvalut-front.png" />
+                        </a>
+                        <a class="button" href="https://www.harigurus.com/" target="_blank">
+                            <span class="visit-site" id="visit2" style="background: #DB2777;">Book store
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21"></line>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3rd project -->
+
+
+                <a class="circle-dot" href="https://webdevenglish.com/" target="_blank"></a>
+                <div class="circle-extension"></div>
+            </div>
+
+            <div class="project project2">
+                <div id="123" class="project-img" value="1">
+
+                    <div class="project-img-wrapper">
+                        <a href="https://israrhusain5892.github.io/MeShop-website/index.html" target="_blank">
+                            <img src="./Images/meshop-front.png" />
+                        </a>
+                        <a class="button" href="https://israrhusain5892.github.io/MeShop-website/index.html"
+                            target="_blank">
+                            <span class="visit-site" id="visit3" style="background: burlywood;">product store
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21"></line>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>Me Shop</h3>
+                    <a href="https://github.com/israrhusain5892/MeShop-website.git" target="_blank" class="github-btn">
+                        <button
+                            style="background: burlywood; padding: 10px; color: white; border-radius: 5px; border:none;">Github
+                            <i class='bx bx-link-external'></i>
+                        </button>
+                    </a>
+                    <p>
+                        Me Shop is an online product store. User can register and login, It has product search
+                        funtionality, add to cart also have product buy funtionality.
+                        . Built the complete site from scratch.
+                    </p>
+                    <div>
+                        <ul>
+                            <li>#Html</li>
+                            <li>#Css</li>
+                            <li>#JavaScript</li>
+                            <li>#Bootstrap</li>
+                            <li>#figma</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <a class="circle-dot" href="https://israrhusain5892.github.io/MeShop-website/index.html"
+                    target="_blank"></a>
+                <div class="circle-extension"></div>
+            </div>
+
+            <div class="project project3">
+                <div class="project-details">
+                    <h3 style="color: green;">CRM-Customer Relationship Manager</h3>
+                    <a href="https://github.com/israrhusain5892/crud-app.git" target="_blank" class="github-btn">
+                        <button
+                            style="background: green; padding: 10px; color: white; border-radius: 5px; border:none;">Github
+                            <i class='bx bx-link-external'></i>
+                        </button>
+                    </a>
+                    <p>
+                        Customer Relationship Manager web application is widely used by managers to store, retrieve and modify their customers' information. This project is the implementation of a backend web application where we can create, read, update and delete (CRUD) customer information. Built the complete site from
+                        scratch.
+                    </p>
+                    <div>
+                        <ul>
+                            <li>#react.js</li>
+                            <li>#express.js</li>
+                            <li>#node.js</li>
+                            <li>#mysql</li>
+                            <li>#sequelize</li>
+                            <li>#css</li>
+                            <li>#javascript</li>
+                            <li>#figma</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="project-img">
+
+                    <div class="project-img-wrapper">
+                        <a href="https://crud-app-frontend-1.onrender.com/" target="_blank">
+                            <img src="./Images/crm-front.png" />
+                        </a>
+                        <a class="button" href="https://crud-app-frontend-1.onrender.com/" target="_blank">
+                            <span class="visit-site" id="visit4" style="background: green;">CRM
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21"></line>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3rd project -->
+
+
+                <a class="circle-dot" href="https://webdevenglish.com/" target="_blank"></a>
+                <div class="circle-extension"></div>
+            </div>
+
+          
+
+            <div class="vertical-line"></div>
+        </section>
+        <h1 style="text-align: center; width: 300px; margin: auto; font-size: 34px; color: white; margin-top: 80px; border: 2px solid #1788ae;;">
+            Contact <span style="color:cyan">Me</span></h1>
+          <section id="contact-me">
+              <div class="contact-container">
+                    <div class="contact-img">
+                        <img src="./Images/contact-me.svg" alt="contact-img"/>
+                    </div>
+                    <div class="contact-form">
+                          <form id="contactForm">
+                               <input type="text" id="subject" class="subject" placeholder="Enter your subject">
+                               <span class="subject-error error"></span>
+                              <div class="contact-main">
+                                <div class="name">
+                                    <input type="text" class="first-name" id="firstname" placeholder="Enter your first Name">
+                                    <span class="firstname-error error"></span>
+                                </div>
+                               
+                                  <div class="name">
+                                    
+                                  <input type="text" class="last-name" id="lastname" placeholder="Enter your Last Name">
+                                  <span class="lastname-error error"></span>
+                                  </div>
+                                 
+                
+                              </div>
+                               <input type="email" class="email" id="email" placeholder="Enter your email address">
+                               <span class="email-error error"></span>
+                               <textarea type="text" class="message" id="message" placeholder="enter your message here.."></textarea>
+                               <span class="msg-error error"></span>
+                               <span class="successMessage"></span>
+                               <button class="send-btn" type="submit">submit
+                                <span class="loading" id="loader"></span>
+                               </button>
+                          </form>
+                    </div>
+              </div>
+          </section>
+          <a href="#header" class="top-btn"><button>Top <i class='bx bxs-up-arrow-alt'></i></button></a>
+    </main>
+    
+    <footer>
+         <div class="footer-section">© 2024 Israr Husain Portfolio. All Rights Reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+   
+   
+</body>
+
+</html>
