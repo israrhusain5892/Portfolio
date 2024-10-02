@@ -997,8 +997,20 @@ nav button:hover {
         display: none;
     }
 
+   .contact-container  .contact-main{
+     flex-direction: column;
+     width: 100%;
+   }
+
+   .contact-main .name{
+       width: 100%!important;
+   }
+   .contact-main .name input{
+         width: 100%!important;
+   }
+
     .contact-container {
-        width: 100%;
+        width: 100%!important;
     }
 
     .contact-container .contact-img {
