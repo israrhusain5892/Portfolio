@@ -46,57 +46,6 @@ hamburger.addEventListener('click', () => {
    navLinks.classList.toggle('active');
 });
 
-// project1
-const imgwrapper = document.querySelector('.project0 .project-img');
-const btn = document.getElementById('visit1');
-const wrapper0 = document.querySelector('.project-img-wrapper');
-
-imgwrapper.addEventListener("mouseenter", (e) => {
-   btn.classList.add('show-btn');
-})
-imgwrapper.addEventListener("mouseleave", (e) => {
-   btn.classList.remove('show-btn');
-})
-
-
-//  projec2
-const imgwrapper1 = document.querySelector('.project1 .project-img');
-const btn1 = document.getElementById('visit2');
-
-imgwrapper1.addEventListener("mouseenter", (e) => {
-   btn1.classList.add('show-btn');
-
-})
-imgwrapper1.addEventListener("mouseleave", (e) => {
-   btn1.classList.remove('show-btn');
-
-})
-
-// project 3
-const imgwrapper3 = document.querySelector('.project2 .project-img');
-const btn3 = document.getElementById('visit3');
-
-imgwrapper3.addEventListener("mouseenter", (e) => {
-   btn3.classList.add('show-btn');
-
-})
-imgwrapper3.addEventListener("mouseleave", (e) => {
-   btn3.classList.remove('show-btn');
-
-})
-
-// project 4 
-const imgwrapper4 = document.querySelector('.project3 .project-img');
-const btn4 = document.getElementById('visit4');
-
-imgwrapper4.addEventListener("mouseenter", (e) => {
-   btn4.classList.add('show-btn');
-
-})
-imgwrapper4.addEventListener("mouseleave", (e) => {
-   btn4.classList.remove('show-btn');
-
-})
 
 
 // contact form validation and email submision

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -20,9 +21,9 @@
 
 
     <style>
-
-.loading {
-            display: none; /* Hide loader by default */
+        .loading {
+            display: none;
+            /* Hide loader by default */
             border: 2px solid white;
             border-radius: 50%;
             border-top-color: transparent;
@@ -32,7 +33,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .loading-button {
@@ -45,6 +48,9 @@
         .loading-button:disabled {
             cursor: not-allowed;
         }
+
+
+
         .visit-site::after {
             content: '';
             position: absolute;
@@ -70,6 +76,11 @@
         #visit3::after {
             border-top: 10px solid burlywood;
         }
+
+        #visit5::after {
+            border-top: 10px solid rgb(66, 6, 230);
+        }
+
 
 
         .github-btn button {
@@ -116,9 +127,11 @@
                 <li style="--i:4"><a class="skill" value="skill" href="#skill">Skills</a></li>
                 <li style="--i:5"><a class="myproject" value="project" href="#latest-works">Projects</a></li>
                 <li style="--i:6"><a class="service" value="service" href="#service-start">Services</a></li>
-                <a href="https://drive.google.com/file/d/1TAeQJ04uu9aV-QF5RMGVgACo-UZFJeSH/view?usp=sharing" style="font-style: none;" target="_blank"><button class="download-btn">Download CV</button></a>
+                <a href="https://drive.google.com/file/d/1TAeQJ04uu9aV-QF5RMGVgACo-UZFJeSH/view?usp=sharing"
+                    style="font-style: none;" target="_blank"><button class="download-btn">Download CV</button></a>
             </ul>
-            <a href="https://drive.google.com/file/d/1TAeQJ04uu9aV-QF5RMGVgACo-UZFJeSH/view?usp=sharing" target="_blank" style="font-style: none;"><button>Download CV</button></a>
+            <a href="../resume/resume.pdf" download="Israr Husain Resume.pdf" style="font-style: none; cursor:pointer;"><button style="cursor:pointer">Download
+                    CV</button></a>
             <div class="hamburger">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -146,13 +159,21 @@
                             <div class="social"
                                 style="display: flex; justify-content: flex-start;align-items: center; gap:10px;">
 
-                                <a style="--i:7" href="#"> <i class="bx bxl-facebook text-cyan"></i></a>
-                                <a style="--i:8" href="#"><i class="bx bxl-linkedin text-cyan"></i></a>
-                                <a style="--i:9" href="#"><i class="bx bxl-github text-cyan"></i></a>
-                                <a style="--i:10" href="#"><i class="bx bxl-twitter text-cyan"></i></a>
+                                <a style="--i:7" href="https://www.facebook.com/israr.husain.3597789"target="_blank"> <i class="bx bxl-facebook text-cyan"></i></a>
+                                <a style="--i:8" href="https://www.linkedin.com/in/israr-husain-b77b58150/" target="_blank"><i class="bx bxl-linkedin text-cyan"></i></a>
+                                <a style="--i:9" href="https://github.com/israrhusain5892" target="_blank"><i class="bx bxl-github text-cyan"></i></a>
+                                <a style="--i:10" href="https://leetcode.com/u/israrhusain5892/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                                        <path
+                                            d="m15.42 16.94-2.25 2.17a2.1 2.1 0 0 1-1.52.56 2.1 2.1 0 0 1-1.52-.56l-3.61-3.63a2.18 2.18 0 0 1-.58-1.55 2.07 2.07 0 0 1 .58-1.52l3.6-3.65a2.1 2.1 0 0 1 1.53-.54 2.08 2.08 0 0 1 1.52.55l2.25 2.17A1.14 1.14 0 0 0 17 9.33l-2.17-2.2a4.24 4.24 0 0 0-2-1.12l2.06-2.08a1.15 1.15 0 0 0-1.62-1.62l-8.43 8.42a4.48 4.48 0 0 0-1.24 3.2 4.57 4.57 0 0 0 1.24 3.23l3.63 3.63A4.38 4.38 0 0 0 11.66 22a4.45 4.45 0 0 0 3.2-1.25L17 18.56a1.14 1.14 0 0 0-1.61-1.62z">
+                                        </path>
+                                        <path d="M19.34 12.84h-8.45a1.12 1.12 0 0 0 0 2.24h8.45a1.12 1.12 0 0 0 0-2.24">
+                                        </path>
+                                    </svg></a>
                             </div>
                             <div class="text-btn">
-                                <a href="#about-me"><button >More About Me</button></a>
+                                <a href="#about-me"><button style="cursor:pointer">More About Me</button></a>
                             </div>
                 </div>
                 <div class="photo">
@@ -187,7 +208,7 @@
                         I have also done some internships at Hulkhire where I worked on a live project involving payment
                         integration in Spring Boot. I gained a lot of experience and know how to work with a team.</p>
                     <div class="about-btn">
-                        <button>More About Me</button>
+                        <button style="cursor:pointer">More About Me</button>
                     </div>
                 </div>
             </div>
@@ -206,8 +227,8 @@
                     <h1>Web Development</h1>
                     <p>I provide service of front-end technologies in HTML, CSS, JavaScript, and React JS. I have worked
                         on different front-end projects like creating clones of popular websites.</p>
-                    <div style="  display: flex; justify-content: center; disalign-content: center;"><button
-                            style="align-content: center;">More About</button></div>
+                    <div style="  display: flex; justify-content: center; align-items: center;"><button
+                            style="align-content: center; cursor:pointer">More About</button></div>
                 </div>
                 <div class="service-card" style="--i:2">
                     <i class='bx bxl-java'></i>
@@ -219,8 +240,8 @@
                     <h1>Backend Development</h1>
                     <p>I have experience with backend technologies like Spring Boot, Hibernate, MySQL, JPA, and Lombok.
                         Projects include movie booking systems and e-commerce applications.</p>
-                    <div style="  display: flex; justify-content: center; disalign-content: center;"><button
-                            style="align-content: center;">More About</button></div>
+                    <div style="  display: flex; justify-content: center; align-items: center;"><button
+                            style="align-content: center; cursor:pointer">More About</button></div>
                 </div>
 
                 <div class="service-card" id="card" style="--i:3">
@@ -231,8 +252,8 @@
                     <h1>Mern Stack Development</h1>
                     <p>I have experience with backend technologies like Node js, express Js, MySQL, MongoDB. Projects
                         include online Book Store. I also work on a mern project Book store.</p>
-                    <div style="  display: flex; justify-content: center; disalign-content: center;"><button
-                            style="align-content: center;">More About</button></div>
+                    <div style="  display: flex; justify-content: center; align-items: center;"><button
+                            style="align-content: center; cursor:pointer">More About</button></div>
                 </div>
 
             </div>
@@ -333,6 +354,58 @@
 
         <section id="project">
             <h2 class="works" id="latest-works">Latest Works</h2>
+
+            <div class="project project5">
+                <div class="project-details">
+                    <h3>E-commerce web Application</h3>
+                    <a href="https://github.com/israrhusain5892/E-Commerce-web-Application.git" target="_blank"
+                        class="github-btn">
+                        <button
+                            style="background: blue; cursor:pointer; padding: 10px; color: white; border-radius: 5px; border:none;">Github
+                            <i class='bx bx-link-external'></i>
+                        </button>
+                    </a>
+                    <p>
+                      The core functionality of an e-commerce platform includes user registration, product browsing with search and filters, a shopping cart, and a secure checkout process. It supports order tracking, and shipping options. Users can view order history, leave product reviews, and access customer support. The platform is also mobile-friendly to ensure a smooth shopping experience on all devices.
+                    </p>
+                    <div>
+                        <ul>
+                            <li>#react.js</li>
+                            <li>#vite.js</li>
+                            <li>#spring boot</li>
+                            <li>#Jpa Hibernate</li>
+                            <li>#Mysql</li>
+                            <li>#css</li>
+                            <li>#javascript</li>
+                            <li>#figma</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="project-img">
+                    <div class="show-button"></div>
+                    <div class="project-img-wrapper">
+                        <a href="https://ecommerce-applicaton.vercel.app/" target="_blank">
+                            <img src="./Images/ecommerce.png" />
+                        </a>
+                        <a class="button" href="https://ecommerce-applicaton.vercel.app/" target="_blank">
+                            <span class="visit-site show-btn" id="visit5" style="background: blue;">E-commerce
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21"></line>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <a class="circle-dot" href="https://webdevenglish.com/" target="_blank"></a>
+                <div class="circle-extension"></div>
+            </div>
             <div class="project project0">
                 <div class="project-img">
 
@@ -341,7 +414,7 @@
                             <img src="./Images/tourism-front.png" />
                         </a>
                         <a class="button" href="https://wondersofbharat-tourism-app.vercel.app/" target="_blank">
-                            <span class="visit-site" id="visit1" style="background: blueviolet;">Tourism
+                            <span class="visit-site show-btn" id="visit1" style="background: blueviolet;">Tourism
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-external-link">
@@ -355,22 +428,28 @@
                 </div>
                 <div class="project-details">
                     <h3>Indian Tourism Wonder Of Bharat</h3>
-                    <a href="https://github.com/israrhusain5892/Tourism-and-Travel-Management-System.git" target="_blank" class="github-btn">
+                    <a href="https://github.com/israrhusain5892/Tourism-and-Travel-Management-System.git"
+                        target="_blank" class="github-btn">
                         <button
                             style="background: blueviolet; padding: 10px; color: white; border-radius: 5px; border:none;">Github
                             <i class='bx bx-link-external'></i>
                         </button>
                     </a>
                     <p>
-                        Wonder of Bharat is a tourism site. This tourism website can offer key functionalities to provide a seamless and enriching experience for travelers. It  include destination pages with detailed information, high-quality images, and local insights. Users can search and filter destinations or tours based on preferences like location, activity type, budget, and duration. Booking and reservation systems are integrated with hotels, and tour providers, with secure payment options. Built the complete site from scratch.
+                        Wonder of Bharat is a tourism site. This tourism website can offer key functionalities to
+                        provide a seamless and enriching experience for travelers. It include destination pages with
+                        detailed information, high-quality images, and local insights. Users can search and filter
+                        destinations or tours based on preferences like location, activity type, budget, and duration.
+                        Booking and reservation systems are integrated with hotels, and tour providers, with secure
+                        payment options. Built the complete site from scratch.
                     </p>
                     <div>
                         <ul>
                             <li>#react.js</li>
                             <li>#vite.js</li>
-                             <li>#spring boot</li>
-                             <li>#Jpa Hibernate</li>
-                             <li>#Mysql</li>
+                            <li>#spring boot</li>
+                            <li>#Jpa Hibernate</li>
+                            <li>#Mysql</li>
                             <li>#css</li>
                             <li>#javascript</li>
                             <li>#figma</li>
@@ -424,7 +503,7 @@
                             <img src="./Images/bookvalut-front.png" />
                         </a>
                         <a class="button" href="https://www.harigurus.com/" target="_blank">
-                            <span class="visit-site" id="visit2" style="background: #DB2777;">Book store
+                            <span class="visit-site show-btn" id="visit2" style="background: #DB2777;">Book store
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-external-link">
@@ -453,7 +532,7 @@
                         </a>
                         <a class="button" href="https://israrhusain5892.github.io/MeShop-website/index.html"
                             target="_blank">
-                            <span class="visit-site" id="visit3" style="background: burlywood;">product store
+                            <span class="visit-site show-btn" id="visit3" style="background: burlywood;">product store
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-external-link">
@@ -505,7 +584,10 @@
                         </button>
                     </a>
                     <p>
-                        Customer Relationship Manager web application is widely used by managers to store, retrieve and modify their customers' information. This project is the implementation of a backend web application where we can create, read, update and delete (CRUD) customer information. Built the complete site from
+                        Customer Relationship Manager web application is widely used by managers to store, retrieve and
+                        modify their customers' information. This project is the implementation of a backend web
+                        application where we can create, read, update and delete (CRUD) customer information. Built the
+                        complete site from
                         scratch.
                     </p>
                     <div>
@@ -529,7 +611,7 @@
                             <img src="./Images/crm-front.png" />
                         </a>
                         <a class="button" href="https://crud-app-frontend-1.onrender.com/" target="_blank">
-                            <span class="visit-site" id="visit4" style="background: green;">CRM
+                            <span class="visit-site show-btn" id="visit4" style="background: green;">CRM
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="feather feather-external-link">
@@ -542,63 +624,63 @@
                     </div>
                 </div>
 
-                <!-- 3rd project -->
-
-
                 <a class="circle-dot" href="https://webdevenglish.com/" target="_blank"></a>
                 <div class="circle-extension"></div>
             </div>
 
-          
+
 
             <div class="vertical-line"></div>
         </section>
-        <h1 style="text-align: center; width: 300px; margin: auto; font-size: 34px; color: white; margin-top: 80px; border: 2px solid #1788ae;;">
+        <h1
+            style="text-align: center; width: 300px; margin: auto; font-size: 34px; color: white; margin-top: 80px; border: 2px solid #1788ae;;">
             Contact <span style="color:cyan">Me</span></h1>
-          <section id="contact-me">
-              <div class="contact-container">
-                    <div class="contact-img">
-                        <img src="./Images/contact-me.svg" alt="contact-img"/>
-                    </div>
-                    <div class="contact-form">
-                          <form id="contactForm">
-                               <input type="text" id="subject" class="subject" placeholder="Enter your subject">
-                               <span class="subject-error error"></span>
-                              <div class="contact-main">
-                                <div class="name">
-                                    <input type="text" class="first-name" id="firstname" placeholder="Enter your first Name">
-                                    <span class="firstname-error error"></span>
-                                </div>
-                               
-                                  <div class="name">
-                                    
-                                  <input type="text" class="last-name" id="lastname" placeholder="Enter your Last Name">
-                                  <span class="lastname-error error"></span>
-                                  </div>
-                                 
-                
-                              </div>
-                               <input type="email" class="email" id="email" placeholder="Enter your email address">
-                               <span class="email-error error"></span>
-                               <textarea type="text" class="message" id="message" placeholder="enter your message here.."></textarea>
-                               <span class="msg-error error"></span>
-                               <span class="successMessage"></span>
-                               <button class="send-btn" type="submit">submit
-                                <span class="loading" id="loader"></span>
-                               </button>
-                          </form>
-                    </div>
-              </div>
-          </section>
-          <a href="#header" class="top-btn"><button>Top <i class='bx bxs-up-arrow-alt'></i></button></a>
+        <section id="contact-me">
+            <div class="contact-container">
+                <div class="contact-img">
+                    <img src="./Images/contact-me.svg" alt="contact-img" />
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" id="subject" class="subject" placeholder="Enter your subject">
+                        <span class="subject-error error"></span>
+                        <div class="contact-main">
+                            <div class="name">
+                                <input type="text" class="first-name" id="firstname"
+                                    placeholder="Enter your first Name">
+                                <span class="firstname-error error"></span>
+                            </div>
+
+                            <div class="name">
+
+                                <input type="text" class="last-name" id="lastname" placeholder="Enter your Last Name">
+                                <span class="lastname-error error"></span>
+                            </div>
+
+
+                        </div>
+                        <input type="email" class="email" id="email" placeholder="Enter your email address">
+                        <span class="email-error error"></span>
+                        <textarea type="text" class="message" id="message"
+                            placeholder="enter your message here.."></textarea>
+                        <span class="msg-error error"></span>
+                        <span class="successMessage"></span>
+                        <button class="send-btn" type="submit">submit
+                            <span class="loading" id="loader"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <a href="#header" class="top-btn"><button>Top <i class='bx bxs-up-arrow-alt'></i></button></a>
     </main>
-    
+
     <footer>
-         <div class="footer-section">© 2024 Israr Husain Portfolio. All Rights Reserved.</div>
+        <div class="footer-section">© 2025 Israr Husain Portfolio. All Rights Reserved.</div>
     </footer>
     <script src="script.js"></script>
-   
-   
+
+
 </body>
 
 </html>
